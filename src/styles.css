@@ -1,4 +1,34 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  width: 100%;
+  max-width: 500px;
+  justify-content: center;
+  margin: auto;
+  background-color: #ffbf00;
+  max-height: 500px;
+}
+
+body {
+  margin: 0;
+}
+h1 {
+  margin: 0;
+}
+
+.dateInput {
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.numberInput {
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.checkBtn {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: #ed872d;
+  border: none;
 }

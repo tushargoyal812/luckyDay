@@ -35,6 +35,7 @@ export default function App() {
         className="dateInput"
         type="date"
         onChange={(e) => setDate(e.target.value)}
+        required="required"
       />
       <div style={{ fontSize: "1.5rem", padding: "0.5rem" }}>
         enter your lucky number
@@ -43,6 +44,8 @@ export default function App() {
         className="numberInput"
         type="number"
         onChange={(e) => setNumber(e.target.value)}
+        required="required"
+        min="0"
       />
       <div>
         <button className="checkBtn" onClick={checkHandler}>
