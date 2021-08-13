@@ -12,18 +12,15 @@ export default function App() {
     i.preventDefault();
     var sum = 0;
     var birthdate = date.split("-");
-    console.log(birthdate);
     birthdate.map((item) => {
       for (let i = 0; i < item.length; i++) {
         sum = sum + Number(item[i]);
       }
-      console.log(item.length);
     });
-    console.log(sum);
     if (sum % Number(number) === 0) {
       setOutput("Hurray!you are lucky🥳🎉🎊");
     } else {
-      setOutput("not lucky");
+      setOutput("Oops!!Your birthday is not a lucky number!🙁");
     }
   }
   return (
