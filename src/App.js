@@ -21,7 +21,7 @@ export default function App() {
     });
     console.log(sum);
     if (sum % Number(number) === 0) {
-      setOutput("you are lucky 😍🎉🎉");
+      setOutput("Hurray!you are lucky🥳🎉🎊");
     } else {
       setOutput("not lucky");
     }
@@ -31,6 +31,7 @@ export default function App() {
       <h1 className="heading">
         Enter Your Birthdate and lucky number to continue...
       </h1>
+      <div className="cake">🎂</div>
       <form onSubmit={checkHandler}>
         <div style={{ fontSize: "1.5rem", padding: "0.5rem" }}>
           select your birth date
@@ -49,7 +50,7 @@ export default function App() {
           type="number"
           onChange={(e) => setNumber(e.target.value)}
           required
-          min="0"
+          min="1"
         />
         <div>
           <button className="checkBtn" type="submit">
@@ -57,7 +58,7 @@ export default function App() {
           </button>
         </div>
       </form>
-      <div>{output}</div>
+      <div className="outputDiv">{output}</div>
     </div>
   );
 }
