@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./styles.css";
+import gitImg from "./images/github (1).png";
+import linkedinImg from "./images/linkedin (2).png";
+import twitterImg from "./images/twitter (1).png";
 
 export default function App() {
   const [date, setDate] = useState();
@@ -56,6 +59,25 @@ export default function App() {
         </div>
       </form>
       <div className="outputDiv">{output}</div>
+      <footer>
+        <ul>
+          <li className="list-item-inline">
+            <a href={"https://github.com/tushargoyal812"}>
+              <img className="git-img" src={gitImg} />
+            </a>
+          </li>
+          <li className="list-item-inline">
+            <a href={"https://www.linkedin.com/in/tushar-goyal-8868741b1"}>
+              <img className="linkedin-img" src={linkedinImg} />
+            </a>
+          </li>
+          <li className="list-item-inline">
+            <a href={"https://twitter.com/tushargoyal29"}>
+              <img className="twitter-img" src={twitterImg} />
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
   );
 }

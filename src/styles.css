@@ -44,3 +44,49 @@ h1 {
 .cake {
   font-size: 5rem;
 }
+
+.git-img {
+  height: 4rem;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+.git-img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.twitter-img {
+  height: 4rem;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+.twitter-img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.linkedin-img {
+  height: 4rem;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+.linkedin-img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+li {
+  display: inline-block;
+  padding: 1.5rem;
+}
+
+footer {
+  margin-top: 10rem;
+  padding: 1rem 1rem;
+  background-color: #ed872d;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
